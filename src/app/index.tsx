@@ -1,15 +1,16 @@
-import {useState} from 'react';
-import { View, Text, StyleSheet, Alert} from 'react-native';
-import {Button} from '@/components/button';
-import {Input} from '@/components/input';
+import {useState} from 'react'
+import { View, Text, StyleSheet, Alert} from 'react-native'
+import {router} from 'expo-router'
+
+import {Button} from '@/components/button'
+import {Input} from '@/components/input'
 
 export default function Index() {
 
     const [name, setName] = useState<string>()
 
-    function handleMessage(){
-        const name = "Paulo Fiuza"
-        Alert.alert(`Olá ${name}, tudo bem?`)
+    function handleNext(){
+        router.navigate("/dashboard")
     }
 
     return (
@@ -18,8 +19,8 @@ export default function Index() {
 
             <Input onChangeText={setName}/>
 
-            <Button title="Entrar" onPress={handleMessage} activeOpacity={0.3}/>
-            <Button title="Sair" onPress={handleMessage} activeOpacity={0.3}/>
+            <Button title="Continuar" onPress={handleNext} activeOpacity={0.3}/>
+            
         </View>
     )
 }

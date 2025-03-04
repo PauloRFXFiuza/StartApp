@@ -1,4 +1,5 @@
-import { View, Text, StyleSheet, Alert, Button } from 'react-native';
+import { View, Text, StyleSheet, Alert} from 'react-native';
+import {Button} from '../components/button';
 
 export default function Index() {
 
@@ -11,7 +12,7 @@ export default function Index() {
         <View style={styles.container}>
             <Text style={styles.title}>Paulo Fiuza, Full Stack Developer</Text>
 
-            <Button title="Clique Aqui" onPress={handleMessage} />
+            <Button/>
         </View>
     )
 }

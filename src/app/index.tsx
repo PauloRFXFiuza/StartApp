@@ -1,8 +1,11 @@
+import {useState} from 'react';
 import { View, Text, StyleSheet, Alert} from 'react-native';
 import {Button} from '@/components/button';
 import {Input} from '@/components/input';
 
 export default function Index() {
+
+    const [name, setName] = useState<string>()
 
     function handleMessage(){
         const name = "Paulo Fiuza"
@@ -11,9 +14,9 @@ export default function Index() {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>Paulo Fiuza</Text>
+            <Text style={styles.title}>Olá, {name}</Text>
 
-            <Input onChangeText={(text) => console.log(text)}/>
+            <Input onChangeText={(text) => setName(text)}/>
 
             <Button title="Entrar" onPress={handleMessage} activeOpacity={0.3}/>
             <Button title="Sair" onPress={handleMessage} activeOpacity={0.3}/>

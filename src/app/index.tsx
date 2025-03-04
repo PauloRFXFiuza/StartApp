@@ -13,6 +13,8 @@ export default function Index() {
             <Text style={styles.title}>Paulo Fiuza, Full Stack Developer</Text>
 
             <Button/>
+            <Button/>
+            <Button/>
         </View>
     )
 }
@@ -24,6 +26,7 @@ const styles = StyleSheet.create({
         padding: 32,
         justifyContent: "center",
         alignItems: "center",
+        gap: 16,
     },
     title:{
         color:"red", 

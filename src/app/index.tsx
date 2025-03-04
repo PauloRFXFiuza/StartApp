@@ -12,9 +12,8 @@ export default function Index() {
         <View style={styles.container}>
             <Text style={styles.title}>Paulo Fiuza, Full Stack Developer</Text>
 
-            <Button/>
-            <Button/>
-            <Button/>
+            <Button title="Entrar"/>
+            <Button title="Sair"/>
         </View>
     )
 }

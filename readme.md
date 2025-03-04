@@ -1,3 +1,78 @@
+Summary in English
+1. app.json
+This file is the configuration file for an Expo project. It contains various settings for the app, such as the app name, version, orientation, icons, splash screen settings, platform-specific configurations, and plugins.
+
+2. router.d.ts
+This TypeScript declaration file extends the expo-router module with additional route types. It imports and re-exports everything from expo-router and declares a module augmentation to add specific route types.
+
+3. expo-env.d.ts
+This TypeScript declaration file references Expo types. It includes a note indicating that the file should not be edited and should be ignored by Git.
+
+4. .gitignore
+This file specifies which files and directories should be ignored by Git, including dependencies, Expo files, native files, Metro files, debug files, macOS files, local environment files, and TypeScript build info files.
+
+5. package.json
+This file contains metadata about the project and its dependencies. It includes the project name, version, entry point, scripts for various tasks, Jest configuration, dependencies, development dependencies, and a flag indicating that the project is private.
+
+6. dashboard.tsx
+This file defines a React component for the dashboard screen. It imports necessary components and styles, and defines the Dashboard component with a button to navigate back.
+
+7. tsconfig.json
+This file contains TypeScript configuration. It extends the Expo TypeScript configuration, sets compiler options, and includes specific files in the project.
+
+8. styles.ts
+This file defines styles for the Input component using React Native's StyleSheet.
+
+9. index.tsx
+This file defines the Input component. It imports necessary components and styles, and defines the Input component that renders a TextInput with the provided styles.
+
+10. styles.ts
+This file defines styles for the Button component using React Native's StyleSheet.
+
+11. index.tsx
+This file defines the Button component. It imports necessary components and styles, defines the Props type, and defines the Button component that renders a TouchableOpacity with a Text element.
+
+12. index.tsx
+This file defines the main screen of the app. It imports necessary components and styles, defines the Index component with state management for a name input, and includes a button to navigate to the dashboard.
+
+Resumo em Português Brasileiro
+1. app.json
+Este arquivo é o arquivo de configuração para um projeto Expo. Ele contém várias configurações para o aplicativo, como o nome do aplicativo, versão, orientação, ícones, configurações da tela de splash, configurações específicas da plataforma e plugins.
+
+2. router.d.ts
+Este arquivo de declaração TypeScript estende o módulo expo-router com tipos de rota adicionais. Ele importa e reexporta tudo de expo-router e declara uma ampliação do módulo para adicionar tipos de rota específicos.
+
+3. expo-env.d.ts
+Este arquivo de declaração TypeScript referencia tipos do Expo. Inclui uma nota indicando que o arquivo não deve ser editado e deve ser ignorado pelo Git.
+
+4. .gitignore
+Este arquivo especifica quais arquivos e diretórios devem ser ignorados pelo Git, incluindo dependências, arquivos do Expo, arquivos nativos, arquivos do Metro, arquivos de depuração, arquivos do macOS, arquivos de ambiente local e arquivos de informações de compilação do TypeScript.
+
+5. package.json
+Este arquivo contém metadados sobre o projeto e suas dependências. Inclui o nome do projeto, versão, ponto de entrada, scripts para várias tarefas, configuração do Jest, dependências, dependências de desenvolvimento e uma flag indicando que o projeto é privado.
+
+6. dashboard.tsx
+Este arquivo define um componente React para a tela do painel. Ele importa os componentes e estilos necessários, e define o componente Dashboard com um botão para navegar de volta.
+
+7. tsconfig.json
+Este arquivo contém a configuração do TypeScript. Ele estende a configuração do TypeScript do Expo, define opções do compilador e inclui arquivos específicos no projeto.
+
+8. styles.ts
+Este arquivo define estilos para o componente Input usando o StyleSheet do React Native.
+
+9. index.tsx
+Este arquivo define o componente Input. Ele importa os componentes e estilos necessários, e define o componente Input que renderiza um TextInput com os estilos fornecidos.
+
+10. styles.ts
+Este arquivo define estilos para o componente Button usando o StyleSheet do React Native.
+
+11. index.tsx
+Este arquivo define o componente Button. Ele importa os componentes e estilos necessários, define o tipo Props, e define o componente Button que renderiza um TouchableOpacity com um elemento Text.
+
+12. index.tsx
+Este arquivo define a tela principal do aplicativo. Ele importa os componentes e estilos necessários, define o componente Index com gerenciamento de estado para um input de nome, e inclui um botão para navegar para o painel.
+
+
 ### Detailed Report in English
 
 #### 1. app.json

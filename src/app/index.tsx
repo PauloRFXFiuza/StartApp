@@ -1,5 +1,6 @@
 import { View, Text, StyleSheet, Alert} from 'react-native';
-import {Button} from '../components/button';
+import {Button} from '@/components/button';
+import {Input} from '@/components/input';
 
 export default function Index() {
 
@@ -10,10 +11,12 @@ export default function Index() {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>Paulo Fiuza, Full Stack Developer</Text>
+            <Text style={styles.title}>Paulo Fiuza</Text>
 
-            <Button title="Entrar"/>
-            <Button title="Sair"/>
+            <Input />
+
+            <Button title="Entrar" onPress={handleMessage} activeOpacity={0.3}/>
+            <Button title="Sair" onPress={handleMessage} activeOpacity={0.3}/>
         </View>
     )
 }

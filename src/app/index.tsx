@@ -16,7 +16,7 @@ export default function Index() {
         <View style={styles.container}>
             <Text style={styles.title}>Olá, {name}</Text>
 
-            <Input onChangeText={(text) => setName(text)}/>
+            <Input onChangeText={setName}/>
 
             <Button title="Entrar" onPress={handleMessage} activeOpacity={0.3}/>
             <Button title="Sair" onPress={handleMessage} activeOpacity={0.3}/>

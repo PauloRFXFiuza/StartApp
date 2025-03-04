@@ -3,7 +3,8 @@ import { View, Text, StyleSheet, Alert, Button } from 'react-native';
 export default function Index() {
 
     function handleMessage(){
-        Alert.alert("OK!")
+        const name = "Paulo Fiuza"
+        Alert.alert(`Olá ${name}, tudo bem?`)
     }
 
     return (

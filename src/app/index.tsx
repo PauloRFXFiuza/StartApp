@@ -1,9 +1,16 @@
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Alert, Button } from 'react-native';
 
 export default function Index() {
+
+    function handleMessage(){
+        Alert.alert("OK!")
+    }
+
     return (
         <View style={styles.container}>
             <Text style={styles.title}>Paulo Fiuza, Full Stack Developer</Text>
+
+            <Button title="Clique Aqui" onPress={handleMessage} />
         </View>
     )
 }

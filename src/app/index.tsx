@@ -13,7 +13,7 @@ export default function Index() {
         <View style={styles.container}>
             <Text style={styles.title}>Paulo Fiuza</Text>
 
-            <Input />
+            <Input onChangeText={(text) => console.log(text)}/>
 
             <Button title="Entrar" onPress={handleMessage} activeOpacity={0.3}/>
             <Button title="Sair" onPress={handleMessage} activeOpacity={0.3}/>
